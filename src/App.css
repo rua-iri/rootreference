@@ -1,38 +1,32 @@
 .App {
   text-align: center;
+  margin: 2vw 5vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root-section {
+  font-size: 10vh;
+  padding: 2vh;
+  margin: 2vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.break-segment {
+  height: 4vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dict-title {
+  font-size: 4vh;
+  padding: 2vw;
 }
 
-.App-link {
-  color: #61dafb;
+.dict-entry {
+  padding: 1vw;
+  line-height: 5vh;
+  font-size: 3vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.gimmie-outline {
+  outline: red 1px solid;
 }
