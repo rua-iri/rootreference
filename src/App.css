@@ -1,27 +1,43 @@
+body {
+  background-image: linear-gradient(rgba(36, 129, 28, 0.342), rgba(75, 192, 51, 0.199)), url("https://www.toptal.com/designers/subtlepatterns/uploads/more-leaves.png");
+
+}
+
 .App {
   text-align: center;
   margin: 2vw 5vw;
+  background-color: white;
 }
 
 #root-section {
   font-size: 10vh;
   padding: 2vh;
-  margin: 2vh;
+  border-radius: 2vh;
 }
 
 .break-segment {
   height: 4vh;
 }
 
+#dict-container {
+  padding-bottom: 5vh;
+}
+
+.dict-result {
+  margin: 10vh;
+}
+
 .dict-title {
   font-size: 4vh;
   padding: 2vw;
+  cursor: pointer;
 }
 
 .dict-entry {
   padding: 1vw;
   line-height: 5vh;
   font-size: 3vh;
+  overflow: hidden;
 }
 
 

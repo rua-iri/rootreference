@@ -40,7 +40,6 @@ function App() {
 
   return (
     <div className="App gimmie-outline">
-      Arabic Root Reference
       <div className='gimmie-outline' id='root-section'>
         {rootWord}
       </div>
@@ -48,7 +47,7 @@ function App() {
       <div className='break-segment gimmie-outline'></div>
 
 
-      <div>
+      <div id='dict-container'>
         <DictionaryResult entryData={lisanData} />
       </div>
     </div>
