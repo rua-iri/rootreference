@@ -17,8 +17,8 @@ export default function DictionaryResult(props) {
             <div className="dict-title gimmie-outline" onClick={expandMenu}>
                 Lisan Al Arab
             </div>
-            <div className="dict-entry gimmie-outline"
-                style={{maxHeight: isExpanded ? 'none' : '10vh' }}>
+            <div className="dict-entry gimmie-outline arab-text"
+                style={{maxHeight: isExpanded ? 'none' : '13vh' }}>
                 {props.entryData ? props.entryData.text : ""}
             </div>
         </div>

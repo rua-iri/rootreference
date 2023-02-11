@@ -15,7 +15,7 @@ function App() {
 
   // if root is only two letters then its last letter 
   // should be doubled e.g. قل => قلل 
-  if(rootWord.length===2) {
+  if(rootWord && rootWord.length===2) {
     rootWord = rootWord + rootWord[1];
   }
 
@@ -23,11 +23,9 @@ function App() {
   const apiUrl = "https://isd5kzb9si.execute-api.us-east-1.amazonaws.com/dictionarylookup?root=" + rootWord;
 
   function checkDictionary() {
-
     axios.get(apiUrl).then((response) => {
       setLisanData(response.data.Item);
     })
-
   }
 
   React.useState(() => {
@@ -36,11 +34,12 @@ function App() {
 
 
   // TODO create search box to appear if no query parameters are given
+  // TODO add error message to indicate that no results were found
 
 
   return (
     <div className="App gimmie-outline">
-      <div className='gimmie-outline' id='root-section'>
+      <div className='arab-text gimmie-outline' id='root-section'>
         {rootWord}
       </div>
 
