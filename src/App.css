@@ -15,7 +15,7 @@ body {
   padding: 2vh;
   direction: rtl;
   font-family: 'Vazirmatn', sans-serif;
-  background-image: linear-gradient(rgba(26, 153, 14, 0.61), rgba(26, 153, 14, 0.541));
+  background-image: linear-gradient(rgba(19, 112, 11, 0.61), rgba(19, 112, 11, 0.541));
   color: rgb(231, 241, 224);
   border-radius: 2vw 2vw 0 0;
   -webkit-text-stroke: 0.2vh black;
@@ -43,12 +43,13 @@ body {
   color: rgb(231, 241, 224);
   border-radius: 2vw 2vw 0 0;
   -webkit-text-stroke: 0.1vh black;
+  user-select: none;
 }
 
 .dict-entry {
   padding: 1vw;
   line-height: 5vh;
-  font-size: 3vh;
+  font-size: 3.5vh;
   overflow: hidden;
   border-radius: 0 0 2vw 2vw;
 }
@@ -56,7 +57,23 @@ body {
 .separate-entry {
   direction: ltr;
   margin-bottom: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.entry-word {
+  font-weight: 700;
+  padding: 2vw;
+  font-size: 5vh;
+}
+
+.entry-def {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 3.5vh;
+}
+
 
 .arab-text {
   direction: rtl;
