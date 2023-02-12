@@ -7,7 +7,8 @@ import DictionaryResult from "./components/DictionaryResult";
 function App() {
 
   const [lisanData, setLisanData] = React.useState({});
-
+  const [hansData, setHansData] = React.useState({});
+  const [laneData, setLaneData] = React.useState({});
 
   // get the query parameters to use for the api
   const queryParameters = new URLSearchParams(window.location.search);
@@ -24,7 +25,9 @@ function App() {
 
   function checkDictionary() {
     axios.get(apiUrl).then((response) => {
-      setLisanData(response.data.Item);
+      setLisanData(response.data.lisanData.Item);
+      setHansData(response.data.hansData);
+      setLaneData(response.data.lanesData);
     })
   }
 
@@ -36,6 +39,7 @@ function App() {
   // TODO create search box to appear if no query parameters are given
   // TODO add error message to indicate that no results were found
 
+  // TODO the border radius around the top edges looks off
 
   return (
     <div className="App gimmie-outline">
@@ -47,7 +51,15 @@ function App() {
 
 
       <div id='dict-container'>
-        <DictionaryResult entryData={lisanData} />
+        <DictionaryResult entryData={hansData} dictTitle="Hans Wehr" />
+      </div>
+
+      <div id='dict-container'>
+        <DictionaryResult entryData={laneData} dictTitle="Lane's Lexicon" />
+      </div>
+
+      <div id='dict-container'>
+        <DictionaryResult entryData={lisanData} dictTitle="Lisan AlArab" />
       </div>
     </div>
   );
