@@ -2,6 +2,8 @@ body {
   background-image: linear-gradient(rgba(36, 129, 28, 0.342), rgba(75, 192, 51, 0.199)), url("https://www.toptal.com/designers/subtlepatterns/uploads/more-leaves.png");
 }
 
+/* TODO store background image locally */
+
 .App {
   text-align: center;
   margin: 2vw 5vw;
@@ -17,7 +19,7 @@ body {
   font-family: 'Vazirmatn', sans-serif;
   background-image: linear-gradient(rgba(19, 112, 11, 0.61), rgba(19, 112, 11, 0.541));
   color: rgb(231, 241, 224);
-  border-radius: 2vw 2vw 0 0;
+  border-radius: 4vh 4vh 0 0;
   -webkit-text-stroke: 0.2vh black;
 }
 
@@ -32,6 +34,7 @@ body {
 .dict-result {
   margin: 4vh 10vh;
   border-radius: 2vw;
+  outline: 0.5vh solid rgba(19, 112, 11, 0.541);
 }
 
 .dict-title {
@@ -56,16 +59,19 @@ body {
 
 .separate-entry {
   direction: ltr;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 1vh;
+  outline: 0.5vh solid rgba(19, 112, 11, 0.541);
+  background-color: rgba(64, 206, 51, 0.144);
 }
 
 .entry-word {
   font-weight: 700;
   padding: 2vw;
-  font-size: 5vh;
+  font-size: 6vh;
 }
 
 .entry-def {
@@ -73,7 +79,6 @@ body {
   text-align: left;
   font-size: 3.5vh;
 }
-
 
 .arab-text {
   direction: rtl;

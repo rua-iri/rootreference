@@ -38,24 +38,23 @@ function App() {
   // TODO the border radius around the top edges looks off
 
   return (
-    <div className="App gimmie-outline">
-      <div className='arab-text gimmie-outline' id='root-section'>
+    <div className="App">
+      <div className='arab-text' id='root-section'>
         {rootWord.length===2 ? rootWord+rootWord[1] : rootWord}
       </div>
 
-      <div className='break-segment gimmie-outline'></div>
-
+      <div className='break-segment'></div>
 
       <div id='dict-container'>
-        <DictionaryResult entryData={hansData} dictTitle="Hans Wehr" />
+        <DictionaryResult entryData={hansData} dictTitle="Hans Wehr" entryType="1" />
       </div>
 
       <div id='dict-container'>
-        <DictionaryResult entryData={laneData} dictTitle="Lane's Lexicon" />
+        <DictionaryResult entryData={laneData} dictTitle="Lane's Lexicon" entryType="1" />
       </div>
 
       <div id='dict-container'>
-        <DictionaryResult entryData={lisanData} dictTitle="Lisan AlArab" />
+        <DictionaryResult entryData={lisanData} dictTitle="Lisan AlArab" entryType="0" />
       </div>
     </div>
   );
